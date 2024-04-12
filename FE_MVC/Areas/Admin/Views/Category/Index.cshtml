@@ -1,9 +1,10 @@
-﻿@{
+﻿@model List<FE_MVC.Areas.Admin.Controllers.Category>
+
+@{
     Layout = null;
 }
 
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -25,5 +26,6 @@
         @Html.Raw("<div>No categories found.</div>")
     }
 
+    <a href="@Url.Action("Create", "Category")">Create Category</a>
 </body>
 </html>

@@ -1,0 +1,22 @@
+﻿@model FE_MVC.Areas.Admin.Controllers.Category
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create Category</title>
+</head>
+<body>
+    <h2>Create Category</h2>
+    @using (Html.BeginForm("Create", "Category", FormMethod.Post))
+    {
+        <label for="CategoryName">Category Name:</label>
+        <input type="text" id="CategoryName" name="CategoryName" />
+        <input type="submit" value="Create" />
+    }
+</body>
+</html>
