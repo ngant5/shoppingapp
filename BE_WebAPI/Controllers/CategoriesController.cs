@@ -18,6 +18,7 @@ namespace BE_WebAPI.Controllers
         // GET api/categories
         public IEnumerable<Models.Categories> Get()
         {
+            listCategory = db.Categories.ToList();
             return listCategory;
         }
 

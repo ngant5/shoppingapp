@@ -3,51 +3,30 @@
   "WorkspaceRootPath": "C:\\App\\shoppingapp\\BE_WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|c:\\app\\shoppingapp\\be_webapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|C:\\App\\shoppingapp\\BE_WebAPI\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|c:\\app\\shoppingapp\\be_webapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
-      "VerticalTabListWidth": 100,
+      "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\App\\shoppingapp\\BE_WebAPI\\Web.config",
               "RelativeDocumentMoniker": "Web.config",
               "ToolTip": "C:\\App\\shoppingapp\\BE_WebAPI\\Web.config",
               "RelativeToolTip": "Web.config",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFAAAAAfAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-04-12T07:29:17.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\App\\shoppingapp\\BE_WebAPI\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\App\\shoppingapp\\BE_WebAPI\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAowDsAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T07:02:56.224Z",
+              "WhenOpened": "2024-04-12T09:20:40.339Z",
               "EditorCaption": ""
             }
           ]

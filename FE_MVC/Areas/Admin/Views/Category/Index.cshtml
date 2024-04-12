@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -12,18 +11,18 @@
 </head>
 <body>
     <h2>Categories</h2>
-    @if (ViewBag.Categories != null)
+    @if (Model != null)
     {
         <ul>
-            @foreach (var category in ViewBag.Categories)
+            @foreach (var category in Model)
             {
-                <li>@category.Name</li>
+                <li>@category.CategoryName</li>
             }
         </ul>
     }
     else
     {
-        <div>No categories found.</div>
+        @Html.Raw("<div>No categories found.</div>")
     }
 
 </body>

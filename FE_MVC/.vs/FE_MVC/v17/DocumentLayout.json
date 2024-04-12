@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\App\\shoppingapp\\FE_MVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|C:\\App\\shoppingapp\\FE_MVC\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|C:\\App\\shoppingapp\\FE_MVC\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|c:\\app\\shoppingapp\\fe_mvc\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|C:\\App\\shoppingapp\\FE_MVC\\areas\\customer\\customerarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\customer\\customerarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|c:\\app\\shoppingapp\\fe_mvc\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|C:\\App\\shoppingapp\\FE_MVC\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,37 +30,37 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\Views\\Category\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Index.cshtml",
               "ToolTip": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\Views\\Category\\Index.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAkAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAiwBEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-12T06:56:02.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\CategoryController.cs",
               "ToolTip": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAQwC4AAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAcwAwAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T06:55:10.439Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CustomerAreaRegistration.cs",
               "DocumentMoniker": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Customer\\CustomerAreaRegistration.cs",
               "RelativeDocumentMoniker": "Areas\\Customer\\CustomerAreaRegistration.cs",
@@ -68,12 +68,11 @@
               "RelativeToolTip": "Areas\\Customer\\CustomerAreaRegistration.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T06:54:30.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T06:54:30.106Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EmployeeAreaRegistration.cs",
               "DocumentMoniker": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Employee\\EmployeeAreaRegistration.cs",
               "RelativeDocumentMoniker": "Areas\\Employee\\EmployeeAreaRegistration.cs",
@@ -81,8 +80,7 @@
               "RelativeToolTip": "Areas\\Employee\\EmployeeAreaRegistration.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T06:54:14.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T06:54:14.042Z"
             },
             {
               "$type": "Document",
