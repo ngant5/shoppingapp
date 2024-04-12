@@ -1,5 +1,7 @@
-﻿using System;
+﻿using BE_WebAPI.Models;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -7,39 +9,59 @@ using System.Web.Http;
 
 namespace BE_WebAPI.Controllers
 {
+    
     public class CategoriesController : ApiController
     {
-        // GET api/<controller>
-        public IEnumerable<Models.Category> Get()
+        private shoppingEntities db = new shoppingEntities();
+
+        List<Models.Categories> listCategory = new List<Models.Categories>();
+        // GET api/categories
+        public IEnumerable<Models.Categories> Get()
         {
-            List<Models.Category> listCategory = new List<Models.Category>();
-            listCategory.Add(new Models.Category { CategoryID = 1, CategoryName = "Category 1" });
-            listCategory.Add(new Models.Category { CategoryID = 2, CategoryName = "Category 2" });
-            listCategory.Add(new Models.Category { CategoryID = 3, CategoryName = "Category 3" });
-
-
             return listCategory;
         }
 
-        // GET api/<controller>/5
-        public string Get(int id)
+        // GET api/categories/5
+        public IHttpActionResult Get(int id)
         {
-            return "value";
+            var category = listCategory.FirstOrDefault(c => c.CategoryID == id);
+            if (category == null)
+            {
+                return NotFound();
+            }
+            return Ok(category);
         }
 
-        // POST api/<controller>
-        public void Post([FromBody] string value)
+        // POST api/categories
+        public IHttpActionResult Post([FromBody] Models.Categories newCategory)
         {
+            listCategory.Add(newCategory);
+            return CreatedAtRoute("DefaultApi", new { id = newCategory.CategoryID }, newCategory);
         }
 
-        // PUT api/<controller>/5
-        public void Put(int id, [FromBody] string value)
+        // PUT api/categories/5
+        public IHttpActionResult Put(int id, [FromBody] Models.Categories updatedCategory)
         {
+            var existingCategory = listCategory.FirstOrDefault(c => c.CategoryID == id);
+            if (existingCategory == null)
+            {
+                return NotFound();
+            }
+            existingCategory.CategoryName = updatedCategory.CategoryName;
+            return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // DELETE api/<controller>/5
-        public void Delete(int id)
+        // DELETE api/categories/5
+        public IHttpActionResult Delete(int id)
         {
+            var category = listCategory.FirstOrDefault(c => c.CategoryID == id);
+            if (category == null)
+            {
+                return NotFound();
+            }
+            listCategory.Remove(category);
+            return Ok(category);
         }
     }
+
 }

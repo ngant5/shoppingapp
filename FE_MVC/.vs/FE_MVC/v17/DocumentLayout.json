@@ -1,12 +1,104 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sgung\\OneDrive\\M\u00E1y t\u00EDnh\\App\\shoppingapp\\FE_MVC\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\App\\shoppingapp\\FE_MVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|C:\\App\\shoppingapp\\FE_MVC\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|C:\\App\\shoppingapp\\FE_MVC\\areas\\employee\\employeearearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\employee\\employeearearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|C:\\App\\shoppingapp\\FE_MVC\\areas\\customer\\customerarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\customer\\customerarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|c:\\app\\shoppingapp\\fe_mvc\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|C:\\App\\shoppingapp\\FE_MVC\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "ToolTip": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-12T06:56:02.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAQwC4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T06:55:10.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerAreaRegistration.cs",
+              "DocumentMoniker": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Customer\\CustomerAreaRegistration.cs",
+              "RelativeDocumentMoniker": "Areas\\Customer\\CustomerAreaRegistration.cs",
+              "ToolTip": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Customer\\CustomerAreaRegistration.cs",
+              "RelativeToolTip": "Areas\\Customer\\CustomerAreaRegistration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T06:54:30.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeAreaRegistration.cs",
+              "DocumentMoniker": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Employee\\EmployeeAreaRegistration.cs",
+              "RelativeDocumentMoniker": "Areas\\Employee\\EmployeeAreaRegistration.cs",
+              "ToolTip": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Employee\\EmployeeAreaRegistration.cs",
+              "RelativeToolTip": "Areas\\Employee\\EmployeeAreaRegistration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T06:54:14.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminAreaRegistration.cs",
+              "DocumentMoniker": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\AdminAreaRegistration.cs",
+              "ToolTip": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeToolTip": "Areas\\Admin\\AdminAreaRegistration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T06:53:53.405Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

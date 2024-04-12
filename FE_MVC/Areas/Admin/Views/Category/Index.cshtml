@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h2>Categories</h2>
+    @if (ViewBag.Categories != null)
+    {
+        <ul>
+            @foreach (var category in ViewBag.Categories)
+            {
+                <li>@category.Name</li>
+            }
+        </ul>
+    }
+    else
+    {
+        <div>No categories found.</div>
+    }
+
+</body>
+</html>
