@@ -1,0 +1,26 @@
+﻿@model FE_MVC.Areas.Admin.Controllers.Category
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit Category</title>
+</head>
+<body>
+    <h2>Edit Category</h2>
+    <form action="@Url.Action("Edit", "Category")" method="post">
+        <input type="hidden" name="CategoryID" value="@Model.CategoryID" />
+        <div>
+            <label for="categoryName">Category Name:</label>
+            <input type="text" id="categoryName" name="CategoryName" value="@Model.CategoryName" placeholder="Enter category name" />
+        </div>
+        <div>
+            <input type="submit" value="Save" />
+        </div>
+    </form>
+</body>
+</html>

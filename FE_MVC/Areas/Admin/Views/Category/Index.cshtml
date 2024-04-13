@@ -17,7 +17,11 @@
         <ul>
             @foreach (var category in Model)
             {
-                <li>@category.CategoryName</li>
+                <li>
+                    @category.CategoryName
+                        <a href="@Url.Action("Edit", "Category", new { id = category.CategoryID })">Edit</a>
+                        <a href="@Url.Action("Delete", "Category", new { id = category.CategoryID })" onclick="return confirm('Xóa category này?')">Delete</a>
+                </li>
             }
         </ul>
     }
