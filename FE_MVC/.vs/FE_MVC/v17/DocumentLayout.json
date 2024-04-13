@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\App\\shoppingapp\\FE_MVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|c:\\app\\shoppingapp\\fe_mvc\\areas\\admin\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\admin\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|c:\\app\\shoppingapp\\fe_mvc\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|C:\\App\\shoppingapp\\FE_MVC\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|c:\\app\\shoppingapp\\fe_mvc\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|C:\\App\\shoppingapp\\FE_MVC\\areas\\admin\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\admin\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|C:\\App\\shoppingapp\\FE_MVC\\areas\\admin\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\admin\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|C:\\App\\shoppingapp\\FE_MVC\\areas\\admin\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\admin\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|C:\\App\\shoppingapp\\FE_MVC\\areas\\admin\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|solutionrelative:areas\\admin\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CBE5619-67D3-4521-BA3C-C25AB8FB75BC}|FE_MVC.csproj|C:\\App\\shoppingapp\\FE_MVC\\areas\\employee\\employeearearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\Views\\Category\\Delete.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Delete.cshtml",
@@ -54,8 +54,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Delete.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-13T15:45:42.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T15:45:42.131Z"
             },
             {
               "$type": "Document",
@@ -65,31 +64,31 @@
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Edit.cshtml",
               "ToolTip": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-13T15:38:23.7Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\Views\\Category\\Create.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Create.cshtml",
               "ToolTip": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\Views\\Category\\Create.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAgwAYAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-12T16:51:17.691Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\Views\\Category\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Index.cshtml",
               "ToolTip": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\Views\\Category\\Index.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwBsAAAAIAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAgwBoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-12T06:56:02.664Z",
               "EditorCaption": ""
@@ -102,10 +101,9 @@
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\CategoryController.cs",
               "ToolTip": "C:\\App\\shoppingapp\\FE_MVC\\Areas\\Admin\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAAIYAAAAAAAAAAAAYwJAAAAAsAAAA",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAAwGQAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T06:55:10.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T06:55:10.439Z"
             },
             {
               "$type": "Document",

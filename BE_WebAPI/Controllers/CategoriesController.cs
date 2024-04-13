@@ -15,15 +15,19 @@ namespace BE_WebAPI.Controllers
         private shoppingEntities db = new shoppingEntities();
 
         List<Models.Categories> listCategory = new List<Models.Categories>();
+        public CategoriesController()
+        {
+            listCategory = db.Categories.ToList(); 
+        }
 
         // GET api/categories
         public IEnumerable<Models.Categories> Get()
         {
-            listCategory = db.Categories.ToList();
+            
             return listCategory;
         }
 
-        // GET api/categories/5
+        // GET api/categories/{id}
         public IHttpActionResult Get(int id)
         {
             var category = listCategory.FirstOrDefault(c => c.CategoryID == id);
@@ -49,10 +53,11 @@ namespace BE_WebAPI.Controllers
 
             db.Categories.Add(newCategory);
             db.SaveChanges();
+            listCategory.Add(newCategory);
             return CreatedAtRoute("DefaultApi", new { id = newCategory.CategoryID }, newCategory);
         }
 
-        // PUT api/categories/5
+        // PUT api/categories/{id}
         public IHttpActionResult Put(int id, [FromBody] Models.Categories updatedCategory)
         {
             var existingCategory = listCategory.FirstOrDefault(c => c.CategoryID == id);
@@ -61,10 +66,11 @@ namespace BE_WebAPI.Controllers
                 return NotFound();
             }
             existingCategory.CategoryName = updatedCategory.CategoryName;
+            db.SaveChanges();
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // DELETE api/categories/5
+        // DELETE api/categories/{id}
         public IHttpActionResult Delete(int id)
         {
             var category = listCategory.FirstOrDefault(c => c.CategoryID == id);
@@ -72,7 +78,9 @@ namespace BE_WebAPI.Controllers
             {
                 return NotFound();
             }
-            listCategory.Remove(category);
+            db.Categories.Remove(category);
+            db.SaveChanges();
+            listCategory.Remove(category); 
             return Ok(category);
         }
     }

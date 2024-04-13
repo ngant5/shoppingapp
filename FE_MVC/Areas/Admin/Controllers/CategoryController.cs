@@ -94,8 +94,13 @@ namespace FE_MVC.Areas.Admin.Controllers
             }
         }
 
-        public async Task<ActionResult> Edit(int id)
+        public async Task<ActionResult> Edit(int? id)
         {
+            if (id == null)
+            {
+                
+                return HttpNotFound(); 
+            }
             try
             {
                 using (var client = new HttpClient())
