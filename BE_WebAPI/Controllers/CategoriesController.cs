@@ -15,6 +15,7 @@ namespace BE_WebAPI.Controllers
         private shoppingEntities db = new shoppingEntities();
 
         List<Models.Categories> listCategory = new List<Models.Categories>();
+
         // GET api/categories
         public IEnumerable<Models.Categories> Get()
         {
@@ -36,7 +37,18 @@ namespace BE_WebAPI.Controllers
         // POST api/categories
         public IHttpActionResult Post([FromBody] Models.Categories newCategory)
         {
-            listCategory.Add(newCategory);
+            
+            if (newCategory == null)
+            {
+                return BadRequest("Invalid data. New category object is null.");
+            }
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            db.Categories.Add(newCategory);
+            db.SaveChanges();
             return CreatedAtRoute("DefaultApi", new { id = newCategory.CategoryID }, newCategory);
         }
 

@@ -67,6 +67,12 @@ namespace FE_MVC.Areas.Admin.Controllers
                     HttpResponseMessage response = await client.PostAsJsonAsync("", category);
                     response.EnsureSuccessStatusCode();
 
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        string errorResponse = await response.Content.ReadAsStringAsync();
+                        System.Diagnostics.Trace.TraceError($"Error response: {errorResponse}");
+                    }
+
             
                     if (response.IsSuccessStatusCode)
                     {
