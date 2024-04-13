@@ -67,7 +67,14 @@ namespace BE_WebAPI.Controllers
             }
             existingCategory.CategoryName = updatedCategory.CategoryName;
             db.SaveChanges();
-            return StatusCode(HttpStatusCode.NoContent);
+            int index = listCategory.FindIndex(c => c.CategoryID == id);
+            if (index != -1)
+            {
+                listCategory[index].CategoryName = updatedCategory.CategoryName;
+            }
+
+            return Ok(existingCategory);
+
         }
 
         // DELETE api/categories/{id}

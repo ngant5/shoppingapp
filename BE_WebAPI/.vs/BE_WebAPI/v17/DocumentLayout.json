@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|c:\\app\\shoppingapp\\be_webapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|C:\\App\\shoppingapp\\BE_WebAPI\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|solutionrelative:app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,8 +34,7 @@
               "RelativeToolTip": "App_Start\\WebApiConfig.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAmwBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:35:55.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T16:35:55.104Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
               "ToolTip": "C:\\App\\shoppingapp\\BE_WebAPI\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAswDsAAAAiAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAqwEsAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-13T13:10:43.951Z",
               "EditorCaption": ""

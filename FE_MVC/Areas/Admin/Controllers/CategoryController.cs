@@ -5,7 +5,6 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
-
 namespace FE_MVC.Areas.Admin.Controllers
 {
     public class CategoryController : Controller
@@ -18,7 +17,7 @@ namespace FE_MVC.Areas.Admin.Controllers
             {
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri("http://localhost/Shopping/"); 
+                    client.BaseAddress = new Uri("http://localhost/Shopping/");
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                     HttpResponseMessage response = await client.GetAsync("api/categories");
                     response.EnsureSuccessStatusCode();
@@ -51,7 +50,6 @@ namespace FE_MVC.Areas.Admin.Controllers
         {
             try
             {
-        
                 if (category == null)
                 {
                     TempData["ErrorMessage"] = "Invalid category data. Please provide valid category information.";
@@ -63,7 +61,6 @@ namespace FE_MVC.Areas.Admin.Controllers
                     client.BaseAddress = new Uri(baseApiUrl);
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-            
                     HttpResponseMessage response = await client.PostAsJsonAsync("", category);
                     response.EnsureSuccessStatusCode();
 
@@ -73,10 +70,8 @@ namespace FE_MVC.Areas.Admin.Controllers
                         System.Diagnostics.Trace.TraceError($"Error response: {errorResponse}");
                     }
 
-            
                     if (response.IsSuccessStatusCode)
                     {
-                        
                         return RedirectToAction("Index");
                     }
                     else
@@ -93,13 +88,12 @@ namespace FE_MVC.Areas.Admin.Controllers
                 return View(category);
             }
         }
-
+        
         public async Task<ActionResult> Edit(int? id)
         {
             if (id == null)
             {
-                
-                return HttpNotFound(); 
+                return HttpNotFound();
             }
             try
             {
@@ -112,7 +106,7 @@ namespace FE_MVC.Areas.Admin.Controllers
                     response.EnsureSuccessStatusCode();
 
                     var category = await response.Content.ReadAsAsync<Category>();
-                    return View(category);
+                    return View("Edit",category);
                 }
             }
             catch (Exception ex)
@@ -147,6 +141,7 @@ namespace FE_MVC.Areas.Admin.Controllers
             }
         }
 
+        [HttpPost]
         public async Task<ActionResult> Delete(int id)
         {
             try
@@ -162,13 +157,20 @@ namespace FE_MVC.Areas.Admin.Controllers
                     return RedirectToAction("Index");
                 }
             }
+            catch (HttpRequestException ex)
+            {
+                System.Diagnostics.Trace.TraceError("HTTP Request Error: " + ex.Message);
+                TempData["ErrorMessage"] = "An error occurred while processing your request. Please check the log for details.";
+                return RedirectToAction("Index");
+            }
             catch (Exception ex)
             {
-                System.Diagnostics.Trace.TraceError("Error: " + ex.Message);
-                TempData["ErrorMessage"] = "An error occurred. Please check the log for details.";
+                System.Diagnostics.Trace.TraceError("General Error: " + ex.Message);
+                TempData["ErrorMessage"] = "An error occurred while processing your request. Please check the log for details.";
                 return RedirectToAction("Index");
             }
         }
+        
     }
 
     public class Category
