@@ -30,14 +30,14 @@ namespace FE_MVC.Areas.Admin.Controllers
             {
                 System.Diagnostics.Trace.TraceError("HTTP Request Error: " + ex.Message);
                 TempData["ErrorMessage"] = "An error occurred. Please check the log for details.";
+                return View("Error");
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Trace.TraceError("General Error: " + ex.Message);
                 TempData["ErrorMessage"] = "An error occurred. Please check the log for details.";
+                return View("Error");
             }
-
-            return View();
         }
 
         public ActionResult Create()
@@ -130,7 +130,17 @@ namespace FE_MVC.Areas.Admin.Controllers
                     HttpResponseMessage response = await client.PutAsJsonAsync($"{category.CategoryID}", category);
                     response.EnsureSuccessStatusCode();
 
-                    return RedirectToAction("Index");
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        string errorResponse = await response.Content.ReadAsStringAsync();
+                        System.Diagnostics.Trace.TraceError($"Error response: {errorResponse}");
+                        TempData["ErrorMessage"] = "Failed to update category. Please try again.";
+                        return View(category);
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index");
+                    }
                 }
             }
             catch (Exception ex)
@@ -151,23 +161,36 @@ namespace FE_MVC.Areas.Admin.Controllers
                     client.BaseAddress = new Uri(baseApiUrl);
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                    HttpResponseMessage response = await client.DeleteAsync($"{id}");
-                    response.EnsureSuccessStatusCode();
+                    HttpResponseMessage response;
 
-                    return RedirectToAction("Index");
+                    
+                    response = await client.DeleteAsync($"api/categories/{id}");
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        return RedirectToAction("Index"); 
+                        
+                    }
+                    else
+                    {
+                        TempData["ErrorMessage"] = "Failed to delete category. Please try again."; // Hoặc thông báo lỗi xóa không thành công
+                        return View("Error");
+                    }
+
                 }
             }
             catch (HttpRequestException ex)
             {
                 System.Diagnostics.Trace.TraceError("HTTP Request Error: " + ex.Message);
                 TempData["ErrorMessage"] = "An error occurred while processing your request. Please check the log for details.";
-                return RedirectToAction("Index");
+                return View("Error");
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Trace.TraceError("General Error: " + ex.Message);
                 TempData["ErrorMessage"] = "An error occurred while processing your request. Please check the log for details.";
-                return RedirectToAction("Index");
+                return View("Error");
+
             }
         }
         

@@ -6,10 +6,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace BE_WebAPI.Controllers
 {
-    
+    [EnableCors(origins: "http://localhost", headers: "*", methods: "*")]
     public class CategoriesController : ApiController
     {
         private shoppingEntities db = new shoppingEntities();
@@ -51,10 +52,20 @@ namespace BE_WebAPI.Controllers
                 return BadRequest(ModelState);
             }
 
-            db.Categories.Add(newCategory);
-            db.SaveChanges();
-            listCategory.Add(newCategory);
-            return CreatedAtRoute("DefaultApi", new { id = newCategory.CategoryID }, newCategory);
+            try
+            {
+                db.Categories.Add(newCategory);
+                db.SaveChanges();
+                listCategory.Add(newCategory);
+                return CreatedAtRoute("DefaultApi", new { id = newCategory.CategoryID }, newCategory);
+            }
+            catch (Exception ex)
+            {
+                
+                System.Diagnostics.Trace.TraceError("Error: " + ex.Message);
+                return InternalServerError(); 
+            }
+
         }
 
         // PUT api/categories/{id}
@@ -65,15 +76,29 @@ namespace BE_WebAPI.Controllers
             {
                 return NotFound();
             }
-            existingCategory.CategoryName = updatedCategory.CategoryName;
-            db.SaveChanges();
-            int index = listCategory.FindIndex(c => c.CategoryID == id);
-            if (index != -1)
+            if (!ModelState.IsValid)
             {
-                listCategory[index].CategoryName = updatedCategory.CategoryName;
+                return BadRequest(ModelState);
             }
 
-            return Ok(existingCategory);
+            try
+            {
+                existingCategory.CategoryName = updatedCategory.CategoryName;
+                db.SaveChanges();
+                int index = listCategory.FindIndex(c => c.CategoryID == id);
+                if (index != -1)
+                {
+                    listCategory[index].CategoryName = updatedCategory.CategoryName;
+                }
+
+                return Ok(existingCategory);
+            }
+            catch (Exception ex)
+            {
+                // Log the error
+                System.Diagnostics.Trace.TraceError("Error: " + ex.Message);
+                return InternalServerError(); // Trả về lỗi 500 - Internal Server Error
+            }
 
         }
 
@@ -85,10 +110,17 @@ namespace BE_WebAPI.Controllers
             {
                 return NotFound();
             }
-            db.Categories.Remove(category);
-            db.SaveChanges();
-            listCategory.Remove(category); 
-            return Ok(category);
+            try
+            {
+                db.Categories.Remove(category);
+                db.SaveChanges();
+                listCategory.Remove(category);
+                return Ok(category);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Trace.TraceError("Error: " + ex.Message);
+                return InternalServerError(); }
         }
     }
 

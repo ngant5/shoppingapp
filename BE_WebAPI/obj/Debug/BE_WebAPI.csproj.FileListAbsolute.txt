@@ -82,3 +82,6 @@ C:\App\shoppingapp\BE_WebAPI\obj\Debug\BE_WebAPI.csproj.CoreCompileInputs.cache
 C:\App\shoppingapp\BE_WebAPI\obj\Debug\BE_WebAPI.csproj.Up2Date
 C:\App\shoppingapp\BE_WebAPI\obj\Debug\BE_WebAPI.dll
 C:\App\shoppingapp\BE_WebAPI\obj\Debug\BE_WebAPI.pdb
+C:\App\shoppingapp\BE_WebAPI\bin\System.Web.Cors.dll
+C:\App\shoppingapp\BE_WebAPI\bin\System.Web.Http.Cors.dll
+C:\App\shoppingapp\BE_WebAPI\bin\System.Web.Http.Cors.xml

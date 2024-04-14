@@ -9,27 +9,88 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <h2>Categories</h2>
-    @if (Model != null)
-    {
-        <ul>
-            @foreach (var category in Model)
-            {
-                <li>
-                    @category.CategoryName
-                        <a href="@Url.Action("Edit", "Category", new { id = category.CategoryID })">Edit</a>
-                        <a href="@Url.Action("Delete", "Category", new { id = category.CategoryID })" onclick="return confirm('Xóa category này?')">Delete</a>
-                </li>
-            }
-        </ul>
-    }
-    else
-    {
-        @Html.Raw("<div>No categories found.</div>")
-    }
+    <h1>Category Management</h1>
+    <input type="text" id="categoryName" placeholder="Category Name">
+    <button onclick="addCategory()">Add Category</button>
+    <ul id="categoryList"></ul>
 
-    <a href="@Url.Action("Create", "Category")">Create Category</a>
+    <script>
+        
+        function addCategory() {
+            var categoryName = $('#categoryName').val();
+            $.ajax({
+                url: '/api/categories',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ categoryName: categoryName }),
+                success: function (response) {
+                    alert('Category added successfully');
+                    $('#categoryName').val('');
+                    loadCategories();
+                },
+                error: function (xhr, status, error) {
+                    alert('Error adding category');
+                }
+            });
+        }
+
+        
+        function updateCategory(categoryId, newName) {
+            $.ajax({
+                url: '/api/categories/' + categoryId,
+                type: 'PUT',
+                contentType: 'application/json',
+                data: JSON.stringify({ categoryName: newName }),
+                success: function (response) {
+                    alert('Category updated successfully');
+                    loadCategories();
+                },
+                error: function (xhr, status, error) {
+                    alert('Error updating category');
+                }
+            });
+        }
+
+        
+        function deleteCategory(categoryId) {
+            $.ajax({
+                url: '/api/categories/' + categoryId,
+                type: 'DELETE',
+                success: function (response) {
+                    alert('Category deleted successfully');
+                    loadCategories();
+                },
+                error: function (xhr, status, error) {
+                    alert('Error deleting category');
+                }
+            });
+        }
+
+        
+        function loadCategories() {
+            $.ajax({
+                url: '/api/categories',
+                type: 'GET',
+                success: function (categories) {
+                    $('#categoryList').empty();
+                    categories.forEach(function (category) {
+                        $('#categoryList').append('<li>' + category.categoryName + ' <button onclick="updateCategory(' + category.categoryId + ', prompt(\'Enter new category name\'))">Update</button> <button onclick="deleteCategory(' + category.categoryId + ')">Delete</button></li>');
+                    });
+                },
+                error: function (xhr, status, error) {
+                    alert('Error loading categories');
+                }
+            });
+        }
+
+        
+        $(document).ready(function () {
+            loadCategories();
+        });
+    </script>
 </body>
+
 </html>
