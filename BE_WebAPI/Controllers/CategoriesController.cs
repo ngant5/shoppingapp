@@ -1,23 +1,22 @@
 ﻿using BE_WebAPI.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace BE_WebAPI.Controllers
 {
     [EnableCors(origins: "http://localhost", headers: "*", methods: "*")]
     public class CategoriesController : ApiController
     {
-        private shoppingEntities db = new shoppingEntities();
+        private readonly shoppingEntities db = new shoppingEntities();
 
-        List<Models.Categories> listCategory = new List<Models.Categories>();
+        readonly List<Models.Categories> listCategory = new List<Models.Categories>();
         public CategoriesController()
         {
-            listCategory = db.Categories.ToList(); 
+            listCategory = db.Categories.ToList();
         }
 
         // GET api/categories
@@ -122,5 +121,5 @@ namespace BE_WebAPI.Controllers
                 return InternalServerError(); }
         }
     }
-
+        
 }
