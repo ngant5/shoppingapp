@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\App\\shoppingapp\\BE_WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|c:\\app\\shoppingapp\\be_webapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|solutionrelative:controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|c:\\app\\shoppingapp\\be_webapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|c:\\app\\shoppingapp\\be_webapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|C:\\App\\shoppingapp\\BE_WebAPI\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CustomersController.cs",
-              "DocumentMoniker": "C:\\App\\shoppingapp\\BE_WebAPI\\Controllers\\CustomersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CustomersController.cs",
-              "ToolTip": "C:\\App\\shoppingapp\\BE_WebAPI\\Controllers\\CustomersController.cs",
-              "RelativeToolTip": "Controllers\\CustomersController.cs",
-              "ViewState": "AQIAAHcAAAAAAAAAAAAswGUAAAAIAAAA",
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\App\\shoppingapp\\BE_WebAPI\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\App\\shoppingapp\\BE_WebAPI\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Controllers\\OrdersController.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAkwEMAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T14:09:32.85Z",
+              "WhenOpened": "2024-04-15T16:16:10.292Z",
               "EditorCaption": ""
             },
             {
@@ -41,7 +41,7 @@
               "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
               "ToolTip": "C:\\App\\shoppingapp\\BE_WebAPI\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAcwG4AAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T14:07:52.086Z",
               "EditorCaption": ""
