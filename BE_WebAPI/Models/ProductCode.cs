@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BE_WebAPI.Models
+namespace BE_WebAPI.Controllers
 {
     using System;
     using System.Collections.Generic;

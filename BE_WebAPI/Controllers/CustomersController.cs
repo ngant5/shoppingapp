@@ -1,4 +1,4 @@
-﻿using BE_WebAPI.Models;
+﻿using BE_WebAPI.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,14 +12,14 @@ namespace BE_WebAPI.Controllers
     {
         private readonly shoppingEntities db = new shoppingEntities();
 
-        readonly List<Models.Customers> listCustomers = new List<Models.Customers>();
+        readonly List<Controllers.Customers> listCustomers = new List<Controllers.Customers>();
         public CustomersController()
         {
             listCustomers = db.Customers.ToList();
         }
 
         
-        public IEnumerable<Models.Customers> Get()
+        public IEnumerable<Controllers.Customers> Get()
         {
             return listCustomers;
         }
@@ -36,7 +36,7 @@ namespace BE_WebAPI.Controllers
         }
 
         
-        public IHttpActionResult Post([FromBody] Models.Customers newCustomer)
+        public IHttpActionResult Post([FromBody] Controllers.Customers newCustomer)
         {
             if (newCustomer == null)
             {
@@ -62,7 +62,7 @@ namespace BE_WebAPI.Controllers
         }
 
         
-        public IHttpActionResult Put(int id, [FromBody] Models.Customers updatedCustomer)
+        public IHttpActionResult Put(int id, [FromBody] Controllers.Customers updatedCustomer)
         {
             var existingCustomer = listCustomers.FirstOrDefault(c => c.CustomerID == id);
             if (existingCustomer == null)

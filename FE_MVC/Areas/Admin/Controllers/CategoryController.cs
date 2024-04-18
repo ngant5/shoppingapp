@@ -9,7 +9,8 @@ namespace FE_MVC.Areas.Admin.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly string baseApiUrl = "http://localhost/Shopping/api/categories";
+        private readonly string baseApiUrl = "http://localhost";
+        
 
         public async Task<ActionResult> Index()
         {
@@ -17,7 +18,7 @@ namespace FE_MVC.Areas.Admin.Controllers
             {
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri("http://localhost/Shopping/");
+                    client.BaseAddress = new Uri(baseApiUrl);
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                     HttpResponseMessage response = await client.GetAsync("api/categories");
                     response.EnsureSuccessStatusCode();

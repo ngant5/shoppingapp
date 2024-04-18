@@ -1,4 +1,4 @@
-﻿using BE_WebAPI.Models;
+﻿using BE_WebAPI.Controllers;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -13,14 +13,14 @@ namespace BE_WebAPI.Controllers
     {
         private readonly shoppingEntities db = new shoppingEntities();
 
-        readonly List<Models.ProductCode> listProductCode = new List<Models.ProductCode>();
+        readonly List<Controllers.ProductCode> listProductCode = new List<Controllers.ProductCode>();
         public ProductCodeController()
         {
             listProductCode = db.ProductCode.ToList();
         }
 
         // GET api/productcodes
-        public IEnumerable<Models.ProductCode> Get()
+        public IEnumerable<Controllers.ProductCode> Get()
         {
             return listProductCode;
         }
@@ -37,7 +37,7 @@ namespace BE_WebAPI.Controllers
         }
 
         // POST api/productcodes
-        public IHttpActionResult Post([FromBody] Models.ProductCode newProductCode)
+        public IHttpActionResult Post([FromBody] Controllers.ProductCode newProductCode)
         {
             if (newProductCode == null)
             {
@@ -63,7 +63,7 @@ namespace BE_WebAPI.Controllers
         }
 
         // PUT api/productcodes/{id}
-        public IHttpActionResult Put(int id, [FromBody] Models.ProductCode updatedProductCode)
+        public IHttpActionResult Put(int id, [FromBody] Controllers.ProductCode updatedProductCode)
         {
             var existingProductCode = listProductCode.FirstOrDefault(c => c.CodeID == id);
             if (existingProductCode == null)

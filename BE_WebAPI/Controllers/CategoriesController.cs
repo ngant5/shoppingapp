@@ -1,4 +1,4 @@
-﻿using BE_WebAPI.Models;
+﻿using BE_WebAPI.Controllers;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -8,19 +8,19 @@ using System.Web.Http.Cors;
 
 namespace BE_WebAPI.Controllers
 {
-    [EnableCors(origins: "http://localhost", headers: "*", methods: "*")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class CategoriesController : ApiController
     {
         private readonly shoppingEntities db = new shoppingEntities();
 
-        readonly List<Models.Categories> listCategory = new List<Models.Categories>();
+        readonly List<Controllers.Categories> listCategory = new List<Controllers.Categories>();
         public CategoriesController()
         {
             listCategory = db.Categories.ToList();
         }
 
         // GET api/categories
-        public IEnumerable<Models.Categories> Get()
+        public IEnumerable<Controllers.Categories> Get()
         {
             
             return listCategory;
@@ -38,7 +38,8 @@ namespace BE_WebAPI.Controllers
         }
 
         // POST api/categories
-        public IHttpActionResult Post([FromBody] Models.Categories newCategory)
+       
+        public IHttpActionResult Post([FromBody] Controllers.Categories newCategory)
         {
             
             if (newCategory == null)
@@ -67,7 +68,8 @@ namespace BE_WebAPI.Controllers
         }
 
         // PUT api/categories/{id}
-        public IHttpActionResult Put(int id, [FromBody] Models.Categories updatedCategory)
+        [EnableCors(origins: "http://localhost/Shopping/api/categories", headers: "*", methods: "*")]
+        public IHttpActionResult Put(int id, [FromBody] Controllers.Categories updatedCategory)
         {
             var existingCategory = listCategory.FirstOrDefault(c => c.CategoryID == id);
             if (existingCategory == null)
@@ -101,6 +103,7 @@ namespace BE_WebAPI.Controllers
         }
 
         // DELETE api/categories/{id}
+        [EnableCors(origins: "http://localhost/Shopping/api/categories", headers: "*", methods: "*")]
         public IHttpActionResult Delete(int id)
         {
             var category = listCategory.FirstOrDefault(c => c.CategoryID == id);

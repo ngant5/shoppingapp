@@ -1,4 +1,4 @@
-﻿using BE_WebAPI.Models;
+﻿using BE_WebAPI.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ namespace BE_WebAPI.Controllers
 {
     private readonly shoppingEntities db = new shoppingEntities();
     
-    readonly List<Models.Orders> listOrders = new List<Models.Orders>();
+    readonly List<Controllers.Orders> listOrders = new List<Controllers.Orders>();
     
     public OrdersController()
     {
@@ -22,7 +22,7 @@ namespace BE_WebAPI.Controllers
     }
 
     // GET api/orders
-    public IEnumerable<Models.Orders> Get()
+    public IEnumerable<Controllers.Orders> Get()
     {
         return listOrders;
     }
@@ -39,7 +39,7 @@ namespace BE_WebAPI.Controllers
     }
 
     // POST api/orders
-    public IHttpActionResult Post([FromBody] Models.Orders newOrder)
+    public IHttpActionResult Post([FromBody] Controllers.Orders newOrder)
     {
         if (newOrder == null)
         {
@@ -65,7 +65,7 @@ namespace BE_WebAPI.Controllers
     }
 
     // PUT api/orders/{id}
-    public IHttpActionResult Put(int id, [FromBody] Models.Orders updatedOrder)
+    public IHttpActionResult Put(int id, [FromBody] Controllers.Orders updatedOrder)
     {
         var existingOrder = listOrders.FirstOrDefault(o => o.OrderID == id);
         if (existingOrder == null)
