@@ -15,7 +15,7 @@
     </div>
 
     <ul id="categoryList"></ul>
-    <ul>
+    @*<ul>
         @foreach (var category in Model)
         {
             <li>
@@ -24,22 +24,26 @@
                 <a href="#" class="delete-category" data-id="@category.CategoryID">Delete</a>
             </li>
         }
-    </ul>
+    </ul>*@
 
     <script>
         $(document).ready(function () {
-            $('.edit-category').click(function (e) {
+            loadCategories();
+
+            //$('.edit-category').click(function (e) {
+            $(document).on('click', '.edit-category', function (e) {
                 e.preventDefault();
-                var categoryId = $(this).data-id;
+                var categoryId = $(this).data('id');
                 var newName = prompt('Enter new category name:');
                 if (newName) {
                     updateCategory(categoryId, newName);
                 }
             });
 
-            $('.delete-category').click(function (e) {
+            /*$('.delete-category').click(function (e) {*/
+            $(document).on('click', '.delete-category', function (e) {
                 e.preventDefault();
-                var categoryId = $(this).data-id;
+                var categoryId = $(this).data('id');
                 if (confirm('Are you sure you want to delete this category?')) {
                     deleteCategory(categoryId);
                 }
@@ -48,7 +52,7 @@
 
         function updateCategory(categoryId, newName) {
             $.ajax({
-                url: 'http://localhost/api/categories' + categoryId,
+                url: 'http://localhost:44369/api/categories/' + categoryId,
                 type: 'PUT',
                 contentType: 'application/json',
                 data: JSON.stringify({ categoryName: newName }),
@@ -64,7 +68,7 @@
 
         function deleteCategory(categoryId) {
             $.ajax({
-                url: 'http://localhost/api/categories' + categoryId,
+                url: 'http://localhost:44369/api/categories/' + categoryId,
                 type: 'DELETE',
                 success: function (response) {
                     alert('Category deleted successfully');
@@ -82,7 +86,7 @@
             var cn = $('#categoryName').val();
             var dt = JSON.stringify({ categoryName: cn });
             $.ajax({
-                url: 'http://localhost/api/categories',
+                url: 'http://localhost:44369/api/categories',
                 type: 'POST',
                 contentType: 'application/json',
                 data: dt,
@@ -103,13 +107,13 @@
 
         function loadCategories() {
             $.ajax({
-                url: 'http://localhost/api/categories',
+                url: 'http://localhost:44369/api/categories',
                 type: 'GET',
                 success: function (categories) {
                     $('#categoryList').empty();
                     categories.forEach(function (category) {
-                        $('#categoryList').append('<li>' + category.CategoryName + ' <button onclick="updateCategory(\'' + category.CategoryID + '\', prompt(\'Enter new category name\'))">Update</button> <button onclick="deleteCategory(\'' + category.CategoryID + '\')">Delete</button></li>');
-                    });
+                        $('#categoryList').append('<li>' + category.CategoryName + ' <a href="#" class="edit-category" data-id="' + category.CategoryID + '">Edit</a> <a href="#" class="delete-category" data-id="' + category.CategoryID + '">Delete</a></li>');
+                        });
                 },
                 error: function (xhr, status, error) {
                     alert('Error loading categories');

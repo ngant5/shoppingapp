@@ -9,7 +9,7 @@ namespace FE_MVC.Areas.Admin.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly string baseApiUrl = "http://localhost";
+        private readonly string baseApiUrl = "http://localhost:44369/";
         
 
         public async Task<ActionResult> Index()

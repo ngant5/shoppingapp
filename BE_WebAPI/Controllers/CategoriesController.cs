@@ -1,6 +1,4 @@
-﻿using BE_WebAPI.Controllers;
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -8,7 +6,7 @@ using System.Web.Http.Cors;
 
 namespace BE_WebAPI.Controllers
 {
-    [EnableCors(origins: "*", headers: "*", methods: "*")]
+    //[EnableCors(origins: "*", headers: "*", methods: "*")]
     public class CategoriesController : ApiController
     {
         private readonly shoppingEntities db = new shoppingEntities();
@@ -68,7 +66,7 @@ namespace BE_WebAPI.Controllers
         }
 
         // PUT api/categories/{id}
-        [EnableCors(origins: "http://localhost/Shopping/api/categories", headers: "*", methods: "*")]
+       
         public IHttpActionResult Put(int id, [FromBody] Controllers.Categories updatedCategory)
         {
             var existingCategory = listCategory.FirstOrDefault(c => c.CategoryID == id);
@@ -103,7 +101,7 @@ namespace BE_WebAPI.Controllers
         }
 
         // DELETE api/categories/{id}
-        [EnableCors(origins: "http://localhost/Shopping/api/categories", headers: "*", methods: "*")]
+        
         public IHttpActionResult Delete(int id)
         {
             var category = listCategory.FirstOrDefault(c => c.CategoryID == id);

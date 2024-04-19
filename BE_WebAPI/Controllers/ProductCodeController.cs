@@ -8,7 +8,7 @@ using System.Web.Http.Cors;
 
 namespace BE_WebAPI.Controllers
 {
-    [EnableCors(origins: "http://localhost", headers: "*", methods: "*")]
+    //[EnableCors(origins: "http://localhost", headers: "*", methods: "*")]
     public class ProductCodeController : ApiController
     {
         private readonly shoppingEntities db = new shoppingEntities();

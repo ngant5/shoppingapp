@@ -1,4 +1,6 @@
-﻿using System.Web.Http;
+﻿using System.Web;
+using System;
+using System.Web.Http;
 using System.Web.Http.Cors;
 using System.Web.Mvc;
 using System.Web.Optimization;
@@ -16,10 +18,9 @@ namespace BE_WebAPI
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            // Cấu hình CORS policy
-            EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");
-            GlobalConfiguration.Configuration.EnableCors(cors);
+            
 
         }
+        
     }
 }

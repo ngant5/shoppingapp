@@ -3,18 +3,6 @@
   "WorkspaceRootPath": "C:\\App\\shoppingapp\\BE_WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|c:\\app\\shoppingapp\\be_webapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|c:\\app\\shoppingapp\\be_webapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|solutionrelative:app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|c:\\app\\shoppingapp\\be_webapi\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|solutionrelative:global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|c:\\app\\shoppingapp\\be_webapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{464FC820-33F4-45E0-832C-D11CC4236AC3}|BE_WebAPI.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -31,53 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\App\\shoppingapp\\BE_WebAPI\\Web.config",
-              "RelativeDocumentMoniker": "Web.config",
-              "ToolTip": "C:\\App\\shoppingapp\\BE_WebAPI\\Web.config",
-              "RelativeToolTip": "Web.config",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAqwHEAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-04-18T16:51:22.563Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Global.asax.cs",
-              "DocumentMoniker": "C:\\App\\shoppingapp\\BE_WebAPI\\Global.asax.cs",
-              "RelativeDocumentMoniker": "Global.asax.cs",
-              "ToolTip": "C:\\App\\shoppingapp\\BE_WebAPI\\Global.asax.cs",
-              "RelativeToolTip": "Global.asax.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAwAsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T16:23:28.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WebApiConfig.cs",
-              "DocumentMoniker": "C:\\App\\shoppingapp\\BE_WebAPI\\App_Start\\WebApiConfig.cs",
-              "RelativeDocumentMoniker": "App_Start\\WebApiConfig.cs",
-              "ToolTip": "C:\\App\\shoppingapp\\BE_WebAPI\\App_Start\\WebApiConfig.cs",
-              "RelativeToolTip": "App_Start\\WebApiConfig.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAwBMAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T16:22:37.397Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\App\\shoppingapp\\BE_WebAPI\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
               "ToolTip": "C:\\App\\shoppingapp\\BE_WebAPI\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAyAAAA",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAAwHUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T16:20:50.24Z",
+              "WhenOpened": "2024-04-19T01:29:10.262Z",
               "EditorCaption": ""
             }
           ]
